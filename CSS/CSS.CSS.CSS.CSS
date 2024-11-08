@@ -130,3 +130,12 @@ margin-right: 2rem;
 .list--tick .list_item{
   padding-left: 0.5rem;
 }
+/* icons */
+.icon {
+  width: 40px;
+  height: 40px
+}
+
+.icon--primary {
+  fill: var(--color-primary)
+}
