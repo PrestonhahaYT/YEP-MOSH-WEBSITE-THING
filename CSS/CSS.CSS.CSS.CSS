@@ -115,6 +115,18 @@ a {
   list-style: none;
   padding-left: 0;
   color: var(--color-headings);
+  font-size: bold;
 }
-.list--inline {
+.list--inline .list_item{
+display: inline-block;
+margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+
+}
+.list--tick .list_item{
+  padding-left: 0.5rem;
 }
