@@ -1,4 +1,6 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -13,7 +15,7 @@ html {
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-border: #ccc;
-  --border-radius:30px;
+  --border-radius: 30px;
 }
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
@@ -157,7 +159,7 @@ a {
 /* Buttons */
 .btn {
   border-radius: 40px;
-  border:0;
+  border: 0;
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
@@ -182,7 +184,7 @@ a {
   color: #fff;
 }
 
-.btn--secondary:hover{
+.btn--secondary:hover {
   background: #00c8eb;
 }
 
@@ -191,17 +193,17 @@ a {
   color: #fff;
 }
 
-.btn--accent:hover{
+.btn--accent:hover {
   background: #ec3000;
 }
 
-.btn--block{
+.btn--block {
   width: 100%;
   display: inline-block;
 }
-@media screen and (min-width: 1024px){
-
-}.btn{
+@media screen and (min-width: 1024px) {
+}
+.btn {
   font-size: 1.5rem;
 }
 
@@ -211,13 +213,13 @@ a {
   border: 2px solid var(--color-headings);
 }
 
-.btn--outline:hover{
+.btn--outline:hover {
   background: var(--color-headings);
   color: #fff;
 }
 
 /* Inputs */
-.input{
+.input {
   padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -226,13 +228,11 @@ a {
   font-size: 2rem;
 }
 
-::placeholder{
+::placeholder {
   color: #cdcbd7;
 }
 
-
-
-.input-group{
+.input-group {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
@@ -243,13 +243,33 @@ a {
   padding: 1.5rem 1rem;
 }
 
-.input-group .btn{
+.input-group .btn {
   margin: 4px;
 }
-/* TODO:Put in componets? */
-/* have not put in componets yet!!!!!! */
-@media screen and (min-width: 1024px){
-  .input{
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+.card_header,
+.card_body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card_header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card_header {
+  background: var(--color-secondary);
+  color: #fff;
 }
